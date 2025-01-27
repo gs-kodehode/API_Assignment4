@@ -1,82 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background: url(/images/bg4.jpg) no-repeat center center/cover;
-  }
-  h1 {
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Spicy Rice", serif;
-    font-size: 80px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: url(/images/bg4.jpg) no-repeat center center/cover;
+}
+h1 {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Spicy Rice", serif;
+  font-size: 80px;
+}
+h1:hover {
+  color: rgb(245, 184, 0);
+  text-shadow: 0 0 25px whitesmoke;
+}
+
+#Web-Site {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 15rem;
+  width: 20rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 3px black;
+}
+.container:hover {
+  color: aqua;
+  box-shadow: 0 0 25px white;
+}
+p {
+  font-size: 15px;
+  color: rgb(166, 166, 209);
+}
+
+#Image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Dogs-Image {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.Dogs-Image:hover {
+  color: aqua;
+  box-shadow: 0 0 25px white;
+}
+.name {
+  color: whitesmoke;
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.nameCompany {
+  color: antiquewhite;
+  font-size: 17px;
+}
+
+.phone,
+.email {
+  color: rgb(230, 234, 235);
+  font-size: 15px;
+  font-family: "Overlock", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
   #Web-Site {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-    margin: 5rem;
-  }
-  
-  .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 0.8rem;
-    height: 15rem;
-    width: 20rem;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 3px black;
-  }
-  
-  p {
-    font-size: 15px;
-    color: rgb(166, 166, 209);
-  }
-  
-  #Image {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    margin: 0;
+    margin-bottom: 5rem;
   }
-  .Dogs-Image {
-    height: 250px;
-    width: 250px;
-  }
-  .name {
-    color: whitesmoke;
-    font-family: "Sour Gummy", sans-serif;
-    font-size: 25px;
-    text-align: center;
-  }
-  
-  .nameCompany {
-    color: antiquewhite;
-    font-size: 17px;
-  }
-  
-  .phone,
-  .email {
-    color: rgb(230, 234, 235);
-    font-size: 15px;
-    font-family: "Overlock", sans-serif;
-  }
-  
-  @media only screen and (max-width: 800px) {
-    #Web-Site {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      margin-bottom: 5rem;
-    }
-  }
-  
+}
