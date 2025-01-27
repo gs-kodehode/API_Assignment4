@@ -10,10 +10,13 @@ const dogAPIURL = "https://random.dog/woof.json";
 let users;
 //ved brukt av asynchronous
 async function apiFunction() {
-  const response = await fetch(apiURL);
-  const usersJson = await response.json();
-  console.log(usersJson);
-
+  try {
+    const response = await fetch(apiURL);
+    const usersJson = await response.json();
+    console.log(usersJson);
+  } catch (error) {
+    console.error(error);
+  }
   users = usersJson.map((user) => {
     return {
       nameCompany: user.company.name,
