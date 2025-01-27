@@ -6,7 +6,8 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: url(/images/bg4.jpg) no-repeat center center/cover;
+  /* background: url(/images/bg4.jpg) no-repeat center center/cover; */
+  background-color: rgb(9, 62, 28);
 }
 h1 {
   color: whitesmoke;
@@ -14,18 +15,20 @@ h1 {
   flex-direction: column;
   align-items: center;
   font-family: "Spicy Rice", serif;
-  font-size: 80px;
+  font-size: 85px;
+  margin: 30px;
 }
 h1:hover {
-  color: rgb(245, 184, 0);
+  color: rgb(255, 199, 14);
   text-shadow: 0 0 25px whitesmoke;
 }
 
 #Web-Site {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
-  margin: 5rem;
+  gap: 2rem;
+  margin: 0 2rem;
+  line-height: 1.2rem;
 }
 
 .container {
@@ -45,7 +48,7 @@ h1:hover {
 }
 p {
   font-size: 15px;
-  color: rgb(166, 166, 209);
+  color: rgb(207, 207, 231);
 }
 
 #Image {
